@@ -39,14 +39,12 @@ function Match() {
                 return
             }else{
                 setTimeout(function(){
-                    if ( matchLoveNumber >= 0 && matchLoveNumber <= 39) {
-                        reation.innerText = 'Kasihan 🤣'
-                    } else if ( matchLoveNumber >= 40 && matchLoveNumber <= 69) {
-                        reation.innerText = 'Lumayan 😏'
-                    } else if (matchLoveNumber >= 70 && matchLoveNumber <= 100) {
-                        reation.innerText = 'Jodoh wok 🥰'
+                    if (matchLoveNumber <= 39) {
+                        reation.innerText = 'Kasihan 🤣';
+                    } else if (matchLoveNumber <= 69) {
+                        reation.innerText = 'Lumayan 😏';
                     } else {
-                        alert('Something went wrong 😵')
+                        reation.innerText = 'Jodoh wok 🥰';
                     }
                 }, 8000)
             }
